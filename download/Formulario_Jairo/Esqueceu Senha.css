@@ -1,0 +1,68 @@
+
+body {
+	background: linear-gradient(to left, #B95FD8, #262F6D, #FA8072);
+	background-size: 100% 100%;
+	font-family: 'Comic Sans MS', cursive;
+}
+
+
+.agroup { /* Fieldset*/
+	background-image: url("6.jpg") ;
+	margin-top: 150px;
+	margin-left: 430px;
+	margin-right: 350px;
+	height: 180px;	
+	position: relative ;
+	border-radius: 50px 10px 50px 10px;
+	box-shadow: 0px 20px 40px;
+	border: none; 
+	color: white;
+}
+
+.dado { /* Legend */
+	margin: 12px;
+}
+
+.mail {
+	margin: 40px;
+
+}
+
+.campo {
+	height: 30px;
+	width: 250px;
+	padding-left: 12px;
+	margin-left: -10px;
+}
+
+.btn-form { 
+	background: linear-gradient(to right, #B4D0C5, #231D47);
+	border-radius: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-width: 0.3px;
+	align-self: center;
+	margin-top: 2rem;
+	outline: none;
+	margin-left: 420px;
+	color: #fff;
+	font-size: 14px;
+	padding: 10px 20px;
+	cursor: pointer;
+	margin-left: 650px;
+	width: 90px;
+	height: 40px;
+	border: none;
+}
+
+.btn-form:hover {
+	color: #eb7a80;
+}
+
+input:hover, textarea:hover, input:focus, textarea:focus {
+    border-color: #000066;
+    box-shadow: 5px 0px 9px #FFFF00;
+    background-color: #B4D0C5;
+    color: black;
+    font-weight: bold;
+}

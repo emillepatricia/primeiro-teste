@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Login</title>
+		<link rel="stylesheet" href="Tela Login.css">
+		<link rel="stylesheet" href="Esqueceu Senha.html">
+		<link rel="stylesheet" href="Cadastro.html">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">	
+	</head>
+
+<body>
+
+	<div class="caixaLogin">
+		<div class="img-user">
+			<img src="user1.png">
+		</div>
+
+		<h2>Logar no Sistema</h2>
+
+		<form>
+			<div class="campo">
+			
+				<input type="text" required="">
+				<label>Usuário</label>
+			
+			</div>
+
+			<div class="campo">
+				<input type="password" required="">
+				<label>Senha</label>
+			</div>
+
+			<!--<input class="checkbox" type="checkbox" checked="checked">
+			<label class="checkbox">Lembrar-me</label><br>-->
+
+			<a href="Esqueceu Senha.html" id="forgot-pass">Esqueceu a senha?</a><br>
+			<div class="square">
+			<button class="btn-form" name="email" id="demo" type="submit" onclick="ola();">Entrar</button> <!--onclick-->
+			</div>
+			
+			<div class="second-column">
+				<p>Ou entre pelas suas redes sociais</p>
+				
+					<ul class="list-social-media">
+						<a class="link-social-media" href="https://pt-br.facebook.com/" target="_blank">
+							<li class="item-social-media">
+								<i class="fab fa-facebook-f"></i>
+							</li>
+						</a>
+
+						<a class="link-social-media" href="https://www.linkedin.com/login/pt" target="_blank">
+							<li class="item-social-media">
+								<i class="fab fa-linkedin-in"></i>
+							</li>
+						</a>
+					</ul>
+				
+					<p>Ainda não tem uma conta?</p>
+					<a href="Cadastro.html" id="register">Efetuar Cadastro</a>
+				
+			</div>
+		</form>
+	</div>
+
+	<script src="Cadastro.js"></script>
+
+</body>
+</html>
+
+
+

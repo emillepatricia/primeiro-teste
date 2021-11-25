@@ -1,0 +1,195 @@
+html {
+	background-image: url("6.jpg");
+}
+body {
+    
+	background-size: 100% 100%;
+	color: white;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 0px;
+	margin: 50px;
+	margin-top: -1px;
+	font-family: 'Comic Sans MS', cursive;
+}
+
+.caixaLogin {
+	background-color: (160,82,45);
+	margin-top: 40px;
+	width: 330px;
+	padding: 40px;
+	border-radius: 50px 10px 50px 10px;
+	box-shadow: 8px 20px 40px black; 
+	position: relative;
+}
+
+
+.caixaLogin h2 {
+	color: #ffff;
+	text-align: center;
+	margin: 20px 0px 30px; 
+	font-family: 'Comic Sans MS', cursive;
+}
+
+.caixaLogin .campo input {
+	background: transparent;
+	color: #ffff;
+	width: 100%;
+	padding: 10px;
+	font-size: 17px;
+	letter-spacing: 2px;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #ffff;
+	margin-bottom: 30px;
+	box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box; 
+}
+
+.caixaLogin .campo {
+	position: relative;
+} 
+
+.caixaLogin .campo label {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	padding: 10px 0px;
+	font-size: 16px;
+	color: #ffff;
+	font-family: 'Comic Sans MS', cursive;
+	pointer-events: none;
+	transition: .5s;
+} 
+
+.caixaLogin .campo input:focus~label,
+.caixaLogin .campo input:valid~label {
+	top: -20px;
+	left: 0px;
+	color: #eb7a80;
+	font-size: 12px;
+}
+
+/*
+#checkbox2 {
+	color: #fff;
+	font-family: Arial;
+	font-size: 12px;
+}*/
+
+.caixaLogin button {
+	width: 80%;
+	height: 40px;
+	margin-left: 28px;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: linear-gradient(to right, #B4D0C5, #231D47);
+	padding: 10px 20px;
+	font-size: 15px;
+	cursor: pointer;
+	border-radius: 5px; 
+}
+
+#forgot-pass {
+    display: block;
+    text-align: right;
+    color: #fff;
+}
+
+#cadastro {
+	font-weight: bold;
+	color: #fff;
+	font-family: Arial;
+	text-align: center;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.img-user {
+	width: 100px;
+	height: 100px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+	top: -5%;
+	position: absolute;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.img-user img {
+	width: 50%;
+}
+
+input[type="submit"] {
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+    color: #FFF;
+    background-color: #08558B;
+    font-weight: bold;
+  }
+  
+input[type="submit"]:hover {
+    background-color: #1B223C;
+    transition: .5s;
+  }
+  
+.second-column {
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.social-media {
+	margin: 1rem 0;
+} 
+
+.link-social-media:not(:first-child) {
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+.link-social-media .item-social-media {
+	transition: background-color .5s;
+}
+
+.link-social-media:hover .item-social-media {
+	background-color: #BA55D3;
+	color: #fff;
+	border-color: #BA55D3;
+}
+
+.list-social-media {
+	display: flex;
+	list-style-type: none;
+}
+
+.item-social-media {
+	border: 1px solid #bdc3c7;
+	border-radius: 50%;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	color: white;
+}
+
+#register {
+ 	font-size: 18px;
+  	display: block;
+    text-align: center;
+    color: #fff;
+}

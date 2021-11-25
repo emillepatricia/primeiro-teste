@@ -1,0 +1,252 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+.register { /* h1 */
+    text-shadow: 5px 5px 5px black;
+	float: left;
+	margin: 90px 240px;
+	width: 60%;
+	line-height:105px;
+  	font-family: 'Comic Sans MS', cursive;
+    font-weight: bold;
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+  	border: 0.1rem solid #fff; 
+    margin-top: 35em;
+    max-height: 3em;
+    border-radius: 12px;
+   	position: relative;
+   	border-radius: 50px 10px 50px 10px;
+	box-shadow: 8px 20px 40px black; 
+	border: none;
+}
+
+
+
+.content { /* Body */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100vw;
+	font-family: 'Comic Sans MS', cursive;
+	color: red;
+	background: linear-gradient(45deg, #B95FD8, #262F6D, #FA8072);
+	background-size: 300% 300%;
+	animation: colors 30s ease infinite;
+	line-height: 50px;
+	
+}
+
+
+@keyframes colors {
+	0% {
+	background-position: 0% 50%;
+}
+
+	50% {
+	background-position: 100% 50%;
+}
+
+	100% {
+	background-position: 0% 50%;
+}
+
+}
+
+
+/* CADASTRO DE FUNCIONÁRIO */
+
+.agroup { /* Fieldset*/
+	background-image: url("6.jpg");
+	font-size: 19px;
+	margin-left: 220px;
+	margin-right: 140px;
+	padding: 20px;
+	border-radius: 15px;
+	color: rgb(18, 17, 17);
+	position: relative;
+	border-radius: 50px 10px 50px 10px;
+	box-shadow: 8px 20px 40px;
+	border: none; 
+	color: white;
+}
+
+.identification { /* Legend */
+	margin: 12px;
+}
+
+.subtitle { 
+	margin: 40px;
+}
+
+
+/* Dados Pessoais */
+
+.field { /* Nome Completo, Naturalidade, Nome da mãe */
+	height: 30px;
+	width: 390px; 
+	padding-left: 10px;	
+}
+
+.field1 { /* UF*/
+	height: 30px;
+	width: 128px;
+	padding-left: 10px;	
+}
+
+.field1-1 { /* CPF, Telefone, Estado Civil */
+	height: 30px;
+	width: 128px;
+	padding-left: 10px;
+}
+
+.field1-2 { /* Email, Confirme e-mail */
+	height: 30px;
+	width: 390px;
+	padding-left: 10px;
+}
+
+.dtnasc { /*Data de Nascimento */
+	height: 30px;
+	width: 125px;
+	padding-left: 10px;
+}
+
+#idComent {
+	height: 100px;
+	width: 390px; 
+	padding-left: 12px;	
+	padding-top: 12px;
+	font-family: Arial;
+	font-size: 13px;
+	margin-top: 25px;
+}
+
+
+/* Dados do Endereço */
+
+.field2 { /* CEP */
+	height: 30px;
+	width: 390px;
+	padding-left: 10px;
+	margin-left: 45px;
+}
+
+.field2-1 { /* Endereço, Complemento, Cidade, Bairro */
+	height: 30px;
+	width: 390px;
+	padding-left: 10px;
+	margin-left: 45px;
+	
+}
+
+.field2-2 { /* Numero */
+	height: 30px;
+	width: 128px;
+	padding-left: 10px;
+	margin-left: 45px;
+} 
+
+
+/* Dados de Login */
+
+.field3 { /* Usuário */
+	height: 30px;
+	width: 390px;
+	padding-left: 10px;
+	margin-left: 7px;
+}
+
+.field3-1 { /* Senha, Confirme senha */
+	height: 30px;
+	width: 128px;
+	padding-left: 10px;
+	margin-left: 7px;
+}
+
+
+/* Dados Profissionais */
+
+.field4 { /* Empresa, Cargo */
+	height: 30px;
+	width: 390px; 
+	padding-left: 10px;
+	margin-left: 81px;
+}
+
+.field4-1 { /* Salário */
+	height: 30px;
+	width: 128px; 
+	padding-left: 10px;
+	margin-left: 81px;	
+}
+
+
+/* Botão */
+
+.btn-form { /* Cancelar */
+	background: linear-gradient(to right, #B4D0C5, #231D47);
+	transition: background-color .5s;
+	border-radius: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-width: 0.3px;
+	align-self: center;
+	margin-top: 2rem;
+	outline: none;
+	margin-left: 420px;
+	color: #fff;
+	font-size: 14px;
+	padding: 10px 20px;
+	cursor: pointer;
+	width: 70px;
+	height: 30px;
+	border: none;
+	outline: none;	
+}
+
+.btn-form:hover {
+	color: #eb7a80;
+}
+
+.btn-form1 { /* Gravar 	*/
+	background: linear-gradient(to right, #B4D0C5, #231D47);	
+	border-radius: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-width: 0.3px;
+	align-self: center;
+	margin-top: 2rem;
+	outline: none;
+	margin-left: 420px;
+	color: #fff;
+	font-size: 14px;
+	padding: 10px 20px;
+	cursor: pointer;
+	margin-left: 60px;
+	width: 70px;
+	height: 30px;
+	border: none;
+	outline: none;
+}
+
+.btn-form1:hover {
+	color: #eb7a80;
+}
+
+
+input:hover, textarea:hover, input:focus, textarea:focus {
+    border-color: #000066;
+    box-shadow: 5px 0px 9px #FFFF00;
+    background-color: #B4D0C5;
+    color: black;
+    font-weight: bold;
+}
+
+

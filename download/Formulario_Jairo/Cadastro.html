@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />			
+		<title>Cadastro</title>
+		<link rel="stylesheet" href="Cadastro.css">
+		<link rel="stylesheet" href="Tela Login.html">
+
+	</head>																			
+	
+<body class="content">
+
+	<form name="form" method="POST" action="Cadastro.html" onsubmit="return validacao()"><br><br>
+
+		<h1 class="register">Cadastro</h1><br><br>
+
+		<fieldset class="agroup">
+			<legend><h2 class="identification">Dados Pessoais</h2></legend>
+		
+			<table>				
+				<tr>
+					<td>
+						<label class="subtitle" for="nome">Nome Completo:</label>
+					</td>
+
+					<td>
+						<input class="field" type="text" id="nome" name="nome" value="" placeholder="Digite seu nome" maxlength="255">
+					</td>
+				</tr>
+
+
+				<tr>
+					<td>
+						<label class="subtitle" for="naturalness">Naturalidade:</label>
+					</td>
+
+					<td>
+						<input class="field" type="text" id="naturalness" name="naturalness" placeholder="Cidade" maxlength="255">
+					</td>
+				</tr>
+
+
+				<tr>
+					<td>
+						<label class="subtitle" for="mySelect">UF:</label>
+					</td>
+
+					<td>
+						<select class="field1" id="mySelect" onchange="myFunction()">
+							<option value="">Selecione</option>
+							<option value="ac">AC</option> 
+							<option value="al">AL</option> 
+							<option value="am">AM</option> 
+							<option value="ap">AP</option> 
+							<option value="ba">BA</option> 
+							<option value="ce">CE</option> 
+							<option value="df">DF</option> 
+							<option value="es">ES</option> 
+							<option value="go">GO</option> 
+							<option value="ma">MA</option> 
+							<option value="mt">MT</option> 
+							<option value="ms">MS</option> 
+							<option value="mg">MG</option> 
+							<option value="pa">PA</option> 
+							<option value="pb">PB</option> 
+							<option value="pr">PR</option> 
+							<option value="pe">PE</option> 
+							<option value="pi">PI</option> 
+							<option value="rj">RJ</option> 
+							<option value="rn">RN</option> 
+							<option value="ro">RO</option> 
+							<option value="rs">RS</option> 
+							<option value="rr">RR</option> 
+							<option value="sc">SC</option> 
+							<option value="se">SE</option> 
+							<option value="sp">SP</option> 
+							<option value="to">TO</option> 
+						</select>
+					</td>
+				</tr>
+
+
+				<tr>
+					<td>
+						<label class="subtitle" for="date">Data de Nascimento:</label>
+					</td>
+
+					<td>
+						<input class="dtnasc" type="date"  id="date" name="date">
+					</td>
+				</tr>
+
+
+				<tr>
+					<td>
+						<label class="subtitle" for="cpf">CPF:</label>
+					</td>
+
+					<td>
+						<input class="field1-1" type="text" id="cpf" name="cpf" autocomplete="on" placeholder="999.999.999-99" maxlength="14" autofocus size="14">
+					</td>
+				</tr>
+
+
+				<tr>
+					<td>
+						<label class="subtitle" for="email">E-mail:</label>
+					</td>
+
+					<td>
+						<input class="field1-2" type="email" id="email" name="email" placeholder="Digite seu email" maxlength="32">
+					</td>
+				</tr>
+
+
+				<tr>
+					<td>
+						<label class="subtitle" for="email">Confirme o e-mail:</label>
+					</td>
+
+					<td>
+						<input class="field1-2" type="email" id="email" name="email" placeholder="Confirme o email" maxlength="32">
+					</td>
+				</tr>
+
+
+				<tr>
+					<td>
+						<label class="subtitle" for="telephone">Telefone:</label>
+					</td>
+
+					<td>
+						<input class="field1-1" type="tel" id="telephone" name="telephone" placeholder="(99) 99999 - 9999" maxlength="15">
+					</td>
+				</tr>
+					
+
+				<tr>
+					<td>
+						<label class="subtitle" for="sex">Gênero:</label>
+					</td>
+
+					<td>
+						<input type="radio" id="sex" name="sex" value="Feminino"> Feminino 
+						<input type="radio" id="sex" name="sex" value="Masculino"> Masculino
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<label class="subtitle" for="mySelect">Estado Civil:</label>
+					</td>
+
+					<td>
+						<select class="field1-1" id="mySelect" onchange="myFunction()">
+							<option value="">Selecione</option>
+							<option value="solteiro">Solteiro</option>
+							<option value="casado">Casado</option>
+							<option value="viuso">Viúvo</option>
+						</select>
+					</td>
+				</tr>
+
+
+				<tr>
+					<td>
+						<label class="subtitle" for="name">Nome da mãe:</label>
+					</td>
+
+					<td>
+						<input class="field" type="text" id="name" name="name" value="" placeholder="Digite o nome da mãe" maxlength="255">
+					</td>
+				</tr>
+
+
+				<tr>
+					<td>
+						<label class="subtitle" for="image">Imagem de perfil:</label>
+					</td>
+
+					<td>
+						<input type="file" id="imagem" name="imagem">
+					</td>
+				</tr>
+
+
+				<tr>
+					<td>
+						<label class="subtitle" for="coment">Comentário:</label>
+					</td>
+
+					<td>
+						<textarea id="idComent" name="coment" placeholder="Digite o comentário" required></textarea>
+					</td>				
+				</tr>
+
+			</table><br>
+		</fieldset><br><br>
+
+
+
+		<fieldset class="agroup">			
+			<legend><h2 class="identification">Dados do Endereço</h2></legend>
+			
+			<table>
+
+				<tr>
+					<td>
+						<label class="subtitle" for="cep">CEP:</label>
+					</td>
+
+					<td>
+						<input class="field2" type="text" id="cep" name="cep" placeholder="Digite seu CEP" maxlength="10">
+					</td>
+				</tr>
+
+
+				<tr>
+					<td>
+						<label class="subtitle" for="end">Endereço:</label>
+					</td>
+
+					<td>
+						<input class="field2-1" type="text" id="end" name="endereco" value="" placeholder="Digite seu endereço" maxlength="255">
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<label class="subtitle" for="num">Numero:</label>
+					</td>
+
+					<td>
+						<input class="field2-2" type="text" id="num" name="numero" placeholder="Número">
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<label class="subtitle" for="complement">Complemento:</label>
+					</td>
+
+					<td>
+						<input class="field2-1" type="text" id="complement" name="complement" placeholder="Digite o complemento" maxlength="200">
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<label class="subtitle" for="city">Cidade:</label>
+					</td>
+
+					<td>
+						<input class="field2-1" type="text" id="city" name="cidade" placeholder="Cidade" maxlength="30">
+					</td>
+				</tr>
+
+
+				<tr>
+					<td>
+						<label class="subtitle" for="bairro">Bairro:</label>
+					</td>
+
+					<td>
+						<input class="field2-1" type="text" id="bairro" name="bairro" placeholder="Bairro" maxlength="30">
+					</td>
+				</tr>							
+
+			</table><br>
+		</fieldset>	<br><br>
+
+
+
+		<fieldset class="agroup">
+			<legend><h2 class="identification">Dados de Login</h2></legend>
+			
+			<table>			
+
+				<tr>
+					<td>
+						<label class="subtitle" for="user">Usuário:</label>
+					</td>
+
+					<td>
+						<input class="field3" type="text" id="user" name="usuário" placeholder="Digite seu CPF ou e-mail" maxlength="32">
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<label class="subtitle" for="password">Senha:</label>
+					</td>
+
+					<td>
+						<input class="field3-1" type="password" id="password" name="senha" placeholder="Digite sua senha" maxlength="20">
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<label class="subtitle" for="passconfirm">Confirme de Senha:</label>
+					</td>
+
+					<td>
+						<input class="field3-1" type="password" id="password" name="passconfirm" placeholder="Confirme a senha" maxlength="20">
+					</td>
+				</tr>
+
+			</table><br>
+		</fieldset><br><br>
+
+
+
+		<fieldset class="agroup">
+			<legend><h2 class="identification">Dados Profissionais</h2></legend>
+
+			<table>
+				<tr>
+					<td>
+						<label class="subtitle" for="company">Empresa:</label>
+					</td>
+
+					<td>
+						<input class="field4" type="text" id="company" name="empresa" placeholder="Nome da empresa" maxlength="30">
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<label class="subtitle" for="office">Cargo:</label>
+					</td>
+
+					<td>
+						<input class="field4" type="text" id="office" name="cargo" placeholder="Digite seu cargo" maxlength="50">
+					</td>
+				</tr>
+
+				
+				<tr>
+					<td>
+						<label class="subtitle" for="salario">Salário:</label>
+					</td>
+
+					<td>
+						<input class="field4-1" type="text" id="salario" name="valorSalario" value="R$"placeholder="Digite seu salário">
+						<p id="resultadoSalario"></p>
+					</td>
+				</tr>
+			
+			</table><br>
+		</fieldset><br>
+
+		<button class="btn-form" type="submit" onclick="ola3();">Cancelar</button>
+		<button class="btn-form1" type="submit">Gravar</button><br><br>
+	</form>
+		
+	<script src="Tela Login.js"></script>
+	<script src="Esqueceu Senha.js"></script>
+	<script src="Cadastro.js"></script>
+
+</body>
+</html>
